@@ -1,0 +1,37 @@
+.pagewrapper{
+	width: 800px;
+	margin:0 auto;
+	padding-top: 60px
+}
+header{
+	text-align: center;
+	font-size: 5em
+}
+.formitem{
+	margin-top: 1.5em
+}
+.bokaitem{
+
+}
+.formheader{
+	text-align: center;
+	font-size: 3em;
+}
+.btn{
+}
+
+
+
+SELECT herbergi.ID, tegund.tegund, tegund.nott 
+FROM herbergi 
+INNER JOIN tegund ON herbergi.tegundID = tegund.ID
+WHERE herbergi.hotelID = $hotelstadur 
+AND herbergi.tegundID = $roomtype 
+AND tegund.fjoldi >= $numberofguests 
+AND NOT EXISTS (
+    SELECT 1
+    FROM   bookings
+    WHERE  bookings.roomID = rooms.roomID
+    AND    bookings.arrivalDate < $requestedLeavingDate
+    AND    bookings.leavingDate > $requestedArrivalDate
+)
