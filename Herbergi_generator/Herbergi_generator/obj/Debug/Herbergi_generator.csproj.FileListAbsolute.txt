@@ -1,0 +1,9 @@
+E:\GSÖ\Miðannarverkefni\Herbergi_generator\Herbergi_generator\bin\Debug\Herbergi_generator.exe.config
+E:\GSÖ\Miðannarverkefni\Herbergi_generator\Herbergi_generator\bin\Debug\Herbergi_generator.exe
+E:\GSÖ\Miðannarverkefni\Herbergi_generator\Herbergi_generator\bin\Debug\Herbergi_generator.pdb
+E:\GSÖ\Miðannarverkefni\Herbergi_generator\Herbergi_generator\obj\Debug\Herbergi_generator.csprojResolveAssemblyReference.cache
+E:\GSÖ\Miðannarverkefni\Herbergi_generator\Herbergi_generator\obj\Debug\Herbergi_generator.Form1.resources
+E:\GSÖ\Miðannarverkefni\Herbergi_generator\Herbergi_generator\obj\Debug\Herbergi_generator.Properties.Resources.resources
+E:\GSÖ\Miðannarverkefni\Herbergi_generator\Herbergi_generator\obj\Debug\Herbergi_generator.csproj.GenerateResource.Cache
+E:\GSÖ\Miðannarverkefni\Herbergi_generator\Herbergi_generator\obj\Debug\Herbergi_generator.exe
+E:\GSÖ\Miðannarverkefni\Herbergi_generator\Herbergi_generator\obj\Debug\Herbergi_generator.pdb
