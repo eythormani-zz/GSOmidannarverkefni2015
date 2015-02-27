@@ -1,0 +1,9 @@
+E:\GSÖ\Miðannarverkefni\Bokanir_Generator\Bokanir_Generator\bin\Debug\Bokanir_Generator.exe.config
+E:\GSÖ\Miðannarverkefni\Bokanir_Generator\Bokanir_Generator\bin\Debug\Bokanir_Generator.exe
+E:\GSÖ\Miðannarverkefni\Bokanir_Generator\Bokanir_Generator\bin\Debug\Bokanir_Generator.pdb
+E:\GSÖ\Miðannarverkefni\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.csprojResolveAssemblyReference.cache
+E:\GSÖ\Miðannarverkefni\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.Form1.resources
+E:\GSÖ\Miðannarverkefni\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.Properties.Resources.resources
+E:\GSÖ\Miðannarverkefni\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.csproj.GenerateResource.Cache
+E:\GSÖ\Miðannarverkefni\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.exe
+E:\GSÖ\Miðannarverkefni\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.pdb
