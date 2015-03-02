@@ -21,7 +21,7 @@ header{
 }
 
 
-
+/*
 SELECT herbergi.ID, tegund.tegund, tegund.nott 
 FROM herbergi 
 INNER JOIN tegund ON herbergi.tegundID = tegund.ID
@@ -34,4 +34,4 @@ AND NOT EXISTS (
     WHERE  bookings.roomID = rooms.roomID
     AND    bookings.arrivalDate < $requestedLeavingDate
     AND    bookings.leavingDate > $requestedArrivalDate
-)
+)*/

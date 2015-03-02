@@ -1,6 +1,4 @@
 <?php
-
-
 session_start();
 if (!isset($_SESSION['username'])) {
 	header("Location: index.php");
@@ -19,59 +17,57 @@ if (isset($_GET['nafn'])) {
 	require("visitor.php");
 	visitor();
 }
-
+//þetta er til að velja laust herbergi
+$selectedroom = null;
 $retainnumberofguests = null;
 $retainroomtype = null;
 $retainhotelstadur = null;
 $retainkomutimi = null;
 $retainbrottfarartimi = null;
 if (isset($_GET['visitors'])) {
-	$retainnumberofguests = $_GET['visitors'];
-	$retainroomtype = $_GET['roomtype'];
-	$retainhotelstadur = $_GET['hotelstadur'];
-	$retainkomutimi = $_GET['hallo'];
-	$retainbrottfarartimi = $_GET['bless'];
+	include("db.php");
+
 	$numberofguests = $_GET['visitors'];
 	$roomtype = $_GET['roomtype'];
 	$hotelstadur = $_GET['hotelstadur'];
 	$komutimi = $_GET['hallo'];
 	$brottfarartimi = $_GET['bless'];
-	// Create connection
-	$conn = new mysqli("localhost", "root", "", "hotel");
-	// Check connection
-	if ($conn->connect_error) {
-	     die("Connection failed: " . $conn->connect_error);
-	} 
 	$sql = "
-	SELECT herbergi.ID, tegund.tegund, tegund.nott 
+	SELECT hotel.nafn, herbergi.ID, tegund.tegund, tegund.nott 
 	FROM herbergi 
+	INNER JOIN hotel ON herbergi.hotelID = hotel.ID
 	INNER JOIN tegund ON herbergi.tegundID = tegund.ID
 	WHERE herbergi.hotelID = $hotelstadur 
 	AND herbergi.tegundID = $roomtype 
-	AND tegund.fjoldi >= $numberofguests 
+	AND tegund.fjoldi >= $numberofguests
 	AND NOT EXISTS (
 	    SELECT 1
 	    FROM   bokanir
-	    WHERE  bokanir.herbergiID = rooms.roomID
+	    WHERE  bokanir.herbergiID = herbergi.ID
 	    AND    bokanir.hallo < $brottfarartimi
 	    AND    bokanir.bless > $komutimi
-	)";
-	$result = $conn->query($sql);
+	) ";
 
-	if ($result->num_rows >= 1) {
-	     // output data of each row
-	     while($row = $result->fetch_assoc()) {
-	         echo "<br> ID: ". $row["herbergi.ID"]. " - Tegund: ". $row["tegund.tegund"]. " Verð: " . $row["tegund.nott"] . "<br>";
-	     }
-	} else {
-	     echo "0 results";
-	}
-	$conn->close();
+	$logon = $dbconnect->prepare($sql);
+
+	$logon->execute();
+
+	$returnedData = $logon->fetch();
+
+	$hotelID = $returnedData['nafn'];
+
+	$roomID = $returnedData['ID'];
+
+    $RoomTegund = $returnedData['tegund'];
+
+    $roomVerd = $returnedData['nott'];
+
+    $selectedroom = "Herbergisnúmer: ".$roomID."| Herbergistegund: ".$RoomTegund."| Verð á nótt: ".$roomVerd."| Staðsetning Hótels: ".$hotelID;
 }
-
-
+//setur inn bókun fyrir viðskiptavin
 if (isset($_GET['bokasimi'])) {
-	
+	require("bokaroom.php");
+	bookRoom();
 }
 ?>
 <!DOCTYPE html>
@@ -137,6 +133,9 @@ if (isset($_GET['bokasimi'])) {
 				<button type="submit" class="formitem btn btn-default">Sjá möguleg herbergi</button>
 			</div>
 		</form>
+		<div class="herbergi">
+			<?php echo $selectedroom; ?>
+		</div>
 		<div class="formheader">Skrá herbergi á gest</div>
 		<form method="get" action="bokun.php" class="form-group">
 			<label for="bokasimi">Símanúmer fyrir bókun</label>
@@ -154,12 +153,13 @@ if (isset($_GET['bokasimi'])) {
 					<option value="9">Hótel Vestmanneyjar</option>
 					<option value="10">Hótel Reykjavík</option>
 				</select>
-			<label for="bokasimi">Einkennisnúmer herbergis</label>
-			<input type="text" name="bokasimi" class="bokaitem form-control" placeholder="Einkennisnúmer herbergis">
+			<label for="bokaherb">Einkennisnúmer herbergis</label>
+			<input type="text" name="bokaherb" class="bokaitem form-control" placeholder="Einkennisnúmer herbergis">
 			<label for="arrival">Komutími</label>
 			<input type="date" name="arrival" class="bokaitem form-control">
 			<label for="going">Brottför</label>
 			<input type="date" name="going" class="bokaitem form-control">
+			<button type="submit" class="formitem btn btn-default">Bóka Herbergi</button>
 		</form>
 	</div>
 </body>
