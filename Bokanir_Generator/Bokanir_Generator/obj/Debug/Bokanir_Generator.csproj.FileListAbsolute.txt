@@ -7,3 +7,6 @@ E:\GSÖ\Miðannarverkefni\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_
 E:\GSÖ\Miðannarverkefni\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.csproj.GenerateResource.Cache
 E:\GSÖ\Miðannarverkefni\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.exe
 E:\GSÖ\Miðannarverkefni\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.pdb
+C:\Users\Páll\Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\bin\Debug\Bokanir_Generator.exe.config
+C:\Users\Páll\Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.exe
+C:\Users\Páll\Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.pdb

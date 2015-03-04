@@ -38,70 +38,70 @@ namespace Bokanir_Generator
                 {
                     tala = 1;
                     bokun[i] += tala.ToString();
-                    tala=rand.Next(1,101);
+                    tala=rand.Next(1,151);
                     bokun[i]+=tala.ToString()+",";
                 }
                 else if (comboBox1.Text == "2. Hótel Ísafjörður")
                 {
                     tala = 2;
                     bokun[i] += tala.ToString()+",";
-                    tala=rand.Next(101, 201);
+                    tala=rand.Next(151, 301);
                     bokun[i]+=tala.ToString()+",";
                 }
                 else if (comboBox1.Text == "3. Hótel Blöndós")
                 {
                     tala = 3;
                     bokun[i] += tala.ToString()+",";
-                    tala=rand.Next(201, 301);
+                    tala=rand.Next(301, 451);
                     bokun[i]+=tala.ToString()+",";
                 }
                 else if(comboBox1.Text=="4. Hótel Sauðárkrókur")
                 {
                     tala = 4;
                     bokun[i] += tala.ToString()+",";
-                    tala=rand.Next(301,401);
+                    tala=rand.Next(451,601);
                     bokun[i]+=tala.ToString()+",";
                 }
                 else if (comboBox1.Text == "5. Hótel Akureyri")
                 {
                     tala = 5;
                     bokun[i] += tala.ToString()+",";
-                    tala=rand.Next(401, 501);
+                    tala=rand.Next(601, 751);
                     bokun[i]+=tala.ToString()+",";
                 }
                 else if (comboBox1.Text=="6. Hótel Húsavík")
                 {
                     tala = 6;
                     bokun[i] += tala.ToString()+",";
-                    tala = rand.Next(501, 601);
+                    tala = rand.Next(751, 901);
                     bokun[i] += tala.ToString() + ",";
                 }
                 else if (comboBox1.Text=="7. Hótel Egillsstaðir")
                 {
                     tala = 7;
                     bokun[i] += tala.ToString()+",";
-                    tala = rand.Next(601, 701);
+                    tala = rand.Next(901, 1051);
                     bokun[i] += tala.ToString() + ",";
                 }
                 else if (comboBox1.Text=="8. Hótel Selfoss")
                 {
                     tala = 8;
                     bokun[i] += tala.ToString()+",";
-                    tala = rand.Next(701, 801);
+                    tala = rand.Next(1051, 1201);
                     bokun[i] += tala.ToString() + ",";
                 }
                 else if (comboBox1.Text=="9. Hótel Vestmaneyjar")
                 {
                     tala = 9;
                     bokun[i] += tala.ToString()+",";
-                    tala = rand.Next(801, 901);
+                    tala = rand.Next(1201, 1351);
                     bokun[i] += tala.ToString() + ",";
                 }
                 else if (comboBox1.Text=="10. Hótel Reykjavík")
                 {
                     tala = 10;
                     bokun[i] += tala.ToString()+",";
-                    tala = rand.Next(901, 1001);
+                    tala = rand.Next(1351, 1501);
                     bokun[i] += tala.ToString() + ",";
                 }
             }
