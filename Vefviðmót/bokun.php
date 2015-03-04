@@ -43,7 +43,7 @@ if (isset($_GET['visitors'])) {
 	AND herbergi.ID NOT IN(
 	SELECT herbergiID FROM bokanir
 	WHERE hallo <= '$komutimi' AND bless >= '$brottfarartimi'
-	";
+	)";
 
 	$logon = $dbconnect->prepare($sql);
 
