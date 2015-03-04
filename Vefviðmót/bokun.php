@@ -137,19 +137,6 @@ if (isset($_GET['bokasimi'])) {
 		<form method="get" action="bokun.php" class="form-group">
 			<label for="bokasimi">Símanúmer fyrir bókun</label>
 			<input type="text" name="bokasimi" class="bokaitem form-control">
-			<label for="bokahotel">Staðsetning Hótels</label>
-				<select name="bokahotel" class="bokaitem form-control">
-					<option value="1">Hótel Stykkishólmur</option>
-					<option value="2">Hótel Ísafjörður</option>
-					<option value="3">Hótel Blönduós</option>
-					<option value="4">Hótel Sauðárkrókur</option>
-					<option value="5">Hótel Akureyri</option>
-					<option value="6">Hótel Húsavík</option>
-					<option value="7">Hótel Egilsstaðir</option>
-					<option value="8">Hótel Selfoss</option>
-					<option value="9">Hótel Vestmanneyjar</option>
-					<option value="10">Hótel Reykjavík</option>
-				</select>
 			<label for="bokaherb">Einkennisnúmer herbergis</label>
 			<input type="text" name="bokaherb" class="bokaitem form-control" placeholder="Einkennisnúmer herbergis">
 			<label for="arrival">Komutími</label>
