@@ -3,7 +3,6 @@ session_start();
 if (!isset($_SESSION['username'])) {
 	header("Location: index.php");
 }
-
 //þetta er til þess að taka inn nýjann gest
 $retainname = null;
 $retainsimi = null;
@@ -32,14 +31,15 @@ if (isset($_GET['visitors'])) {
 	$hotelstadur = $_GET['hotelstadur'];
 	$komutimi = $_GET['hallo'];
 	$brottfarartimi = $_GET['bless'];
+
 	$sql = "
 	SELECT hotel.nafn, herbergi.ID, tegund.tegund, tegund.nott
 	FROM herbergi
 	INNER JOIN hotel ON herbergi.hotelID = hotel.ID
 	INNER JOIN tegund ON herbergi.tegundID = tegund.ID
-	WHERE herbergi.hotelID = 9
-	AND herbergi.tegundID = 6
-	AND tegund.fjoldi >= 4
+	WHERE herbergi.hotelID = $hotelstadur
+	AND herbergi.tegundID = $roomtype
+	AND tegund.fjoldi >= $numberofguests
 	AND herbergi.ID NOT IN(
 	SELECT herbergiID FROM bokanir
 	WHERE hallo <= '$komutimi' AND bless >= '$brottfarartimi'
@@ -144,6 +144,11 @@ if (isset($_GET['bokasimi'])) {
 			<label for="going">Brottför</label>
 			<input type="date" name="going" class="bokaitem form-control">
 			<button type="submit" class="formitem btn btn-default">Bóka Herbergi</button>
+		</form>
+		<div class="formheader">Annarskonar skipanir</div>
+		<form method="get" action="bokun.php" class="form-group">
+			<label for="query">Hér fer SQL skipunin</label>
+			<textarea name="query" class="form-control" cols="30" rows="10"></textarea>
 		</form>
 	</div>
 </body>
