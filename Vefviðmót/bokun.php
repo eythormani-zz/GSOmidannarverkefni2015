@@ -33,20 +33,17 @@ if (isset($_GET['visitors'])) {
 	$komutimi = $_GET['hallo'];
 	$brottfarartimi = $_GET['bless'];
 	$sql = "
-	SELECT hotel.nafn, herbergi.ID, tegund.tegund, tegund.nott 
-	FROM herbergi 
+	SELECT hotel.nafn, herbergi.ID, tegund.tegund, tegund.nott
+	FROM herbergi
 	INNER JOIN hotel ON herbergi.hotelID = hotel.ID
 	INNER JOIN tegund ON herbergi.tegundID = tegund.ID
-	WHERE herbergi.hotelID = $hotelstadur 
-	AND herbergi.tegundID = $roomtype 
-	AND tegund.fjoldi >= $numberofguests
-	AND NOT EXISTS (
-	    SELECT 1
-	    FROM   bokanir
-	    WHERE  bokanir.herbergiID = herbergi.ID
-	    AND    bokanir.hallo < $brottfarartimi
-	    AND    bokanir.bless > $komutimi
-	) ";
+	WHERE herbergi.hotelID = 9
+	AND herbergi.tegundID = 6
+	AND tegund.fjoldi >= 4
+	AND herbergi.ID NOT IN(
+	SELECT herbergiID FROM bokanir
+	WHERE hallo <= '$komutimi' AND bless >= '$brottfarartimi'
+	";
 
 	$logon = $dbconnect->prepare($sql);
 
