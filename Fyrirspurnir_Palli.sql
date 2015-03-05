@@ -1,4 +1,4 @@
-/*----- 1 -----*/
+﻿/*----- 1 -----*/
 SELECT * FROM hotel
 
 /*----- 2 ------*/
@@ -22,6 +22,7 @@ GROUP BY('nafn')
 SELECT AVG(nott) FROM tegund
 
 /*----- 7 -----*/ Eyþór gerð þú þetta
+Hvað eru "Double Rooms"
 
 /*----- 8 -----*/
 SELECT notendur.nafn, bokanir.hallo, bokanir.bless FROM notendur

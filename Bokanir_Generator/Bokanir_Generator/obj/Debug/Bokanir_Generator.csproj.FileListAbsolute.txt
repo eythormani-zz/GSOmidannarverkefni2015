@@ -10,3 +10,12 @@ E:\GSÖ\Miðannarverkefni\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_
 C:\Users\Páll\Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\bin\Debug\Bokanir_Generator.exe.config
 C:\Users\Páll\Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.exe
 C:\Users\Páll\Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.pdb
+F:\My Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\bin\Debug\Bokanir_Generator.exe.config
+F:\My Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.exe
+F:\My Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.pdb
+F:\My Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\bin\Debug\Bokanir_Generator.exe
+F:\My Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\bin\Debug\Bokanir_Generator.pdb
+F:\My Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.csprojResolveAssemblyReference.cache
+F:\My Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.Form1.resources
+F:\My Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.Properties.Resources.resources
+F:\My Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.csproj.GenerateResource.Cache
