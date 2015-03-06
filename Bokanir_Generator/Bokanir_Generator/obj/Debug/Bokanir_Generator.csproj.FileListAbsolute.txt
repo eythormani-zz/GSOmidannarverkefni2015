@@ -19,3 +19,6 @@ F:\My Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\
 F:\My Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.Form1.resources
 F:\My Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.Properties.Resources.resources
 F:\My Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.csproj.GenerateResource.Cache
+C:\Users\EyþórMáni\Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\bin\Debug\Bokanir_Generator.exe.config
+C:\Users\EyþórMáni\Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.exe
+C:\Users\EyþórMáni\Documents\GitHub\midannarverkefni2015\Bokanir_Generator\Bokanir_Generator\obj\Debug\Bokanir_Generator.pdb

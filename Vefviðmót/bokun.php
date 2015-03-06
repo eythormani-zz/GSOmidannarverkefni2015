@@ -112,16 +112,16 @@ if (isset($_GET['bokasimi'])) {
 				</select>
 				<label for="hotelstadur">Staðsetning Hótels</label>
 				<select name="hotelstadur" class="bokaitem form-control" value="<?php echo $retainhotelstadur; ?>">
-				  <option value="1">Hótel Stykkishólmur</option>
-				  <option value="2">Hótel Ísafjörður</option>
-				  <option value="3">Hótel Blönduós</option>
-				  <option value="4">Hótel Sauðárkrókur</option>
-				  <option value="5">Hótel Akureyri</option>
-				  <option value="6">Hótel Húsavík</option>
-				  <option value="7">Hótel Egilsstaðir</option>
-				  <option value="8">Hótel Selfoss</option>
-				  <option value="9">Hótel Vestmanneyjar</option>
-				  <option value="10">Hótel Reykjavík</option>
+				  <option value="0">Hótel Stykkishólmur</option>
+				  <option value="1">Hótel Ísafjörður</option>
+				  <option value="2">Hótel Blönduós</option>
+				  <option value="3">Hótel Sauðárkrókur</option>
+				  <option value="4">Hótel Akureyri</option>
+				  <option value="5">Hótel Húsavík</option>
+				  <option value="6">Hótel Egilsstaðir</option>
+				  <option value="7">Hótel Selfoss</option>
+				  <option value="8">Hótel Vestmanneyjar</option>
+				  <option value="9">Hótel Reykjavík</option>
 				</select>
 				<label for="hallo">Komutími</label>
 				<input type="date" name="hallo" class="bokaitem form-control" value="<?php echo $retainkomutimi; ?>">

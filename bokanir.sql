@@ -406,7 +406,7 @@ insert into bokanir(notandiID,hotelID,herbergiID,hallo,bless) values
 (39,4,513,'2017-2-9','2017-2-14'),
 (143,4,526,'2011-9-27','2011-10-10'),
 (80,4,511,'2016-4-4','2016-4-15'),
-(143,4,545,'2018-6-13','2018-6-14'),
+(143,4,545,'2018-6-13','2018-6-14');
 --Akureyri--
 insert into bokanir(notandiID,hotelID,herbergiID,hallo,bless) values
 (7,5,604,'2018-11-2','2018-11-5'),
@@ -508,7 +508,7 @@ insert into bokanir(notandiID,hotelID,herbergiID,hallo,bless) values
 (23,5,723,'2016-4-5','2016-4-25'),
 (45,5,682,'2012-4-4','2012-4-21'),
 (71,5,722,'2019-4-2','2019-4-18'),
-(10,5,601,'2011-8-8','2011-8-21')
+(10,5,601,'2011-8-8','2011-8-21');
 --Húsavík--
 insert into bokanir(notandiID,hotelID,herbergiID,hallo,bless) values
 (119,6,847,'2018-11-18','2018-12-11'),

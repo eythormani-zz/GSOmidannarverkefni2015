@@ -7,3 +7,12 @@ E:\GSÖ\Miðannarverkefni\Herbergi_generator\Herbergi_generator\obj\Debug\Herber
 E:\GSÖ\Miðannarverkefni\Herbergi_generator\Herbergi_generator\obj\Debug\Herbergi_generator.csproj.GenerateResource.Cache
 E:\GSÖ\Miðannarverkefni\Herbergi_generator\Herbergi_generator\obj\Debug\Herbergi_generator.exe
 E:\GSÖ\Miðannarverkefni\Herbergi_generator\Herbergi_generator\obj\Debug\Herbergi_generator.pdb
+C:\Users\EyþórMáni\Documents\GitHub\midannarverkefni2015\Herbergi_generator\Herbergi_generator\bin\Debug\Herbergi_generator.exe.config
+C:\Users\EyþórMáni\Documents\GitHub\midannarverkefni2015\Herbergi_generator\Herbergi_generator\obj\Debug\Herbergi_generator.exe
+C:\Users\EyþórMáni\Documents\GitHub\midannarverkefni2015\Herbergi_generator\Herbergi_generator\obj\Debug\Herbergi_generator.pdb
+C:\Users\EyþórMáni\Documents\GitHub\midannarverkefni2015\Herbergi_generator\Herbergi_generator\bin\Debug\Herbergi_generator.exe
+C:\Users\EyþórMáni\Documents\GitHub\midannarverkefni2015\Herbergi_generator\Herbergi_generator\bin\Debug\Herbergi_generator.pdb
+C:\Users\EyþórMáni\Documents\GitHub\midannarverkefni2015\Herbergi_generator\Herbergi_generator\obj\Debug\Herbergi_generator.csprojResolveAssemblyReference.cache
+C:\Users\EyþórMáni\Documents\GitHub\midannarverkefni2015\Herbergi_generator\Herbergi_generator\obj\Debug\Herbergi_generator.Form1.resources
+C:\Users\EyþórMáni\Documents\GitHub\midannarverkefni2015\Herbergi_generator\Herbergi_generator\obj\Debug\Herbergi_generator.Properties.Resources.resources
+C:\Users\EyþórMáni\Documents\GitHub\midannarverkefni2015\Herbergi_generator\Herbergi_generator\obj\Debug\Herbergi_generator.csproj.GenerateResource.Cache

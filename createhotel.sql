@@ -1,27 +1,26 @@
-CREATE TABLE Hotel(
+CREATE TABLE hotel(
 	ID int auto_increment PRIMARY KEY,
 	nafn varchar(30)
 );
-CREATE TABLE Notendur(
+CREATE TABLE notendur(
 	ID int auto_increment PRIMARY KEY,
 	nafn varchar(100),
 	email varchar(100),
 	simi int(7),
 	kortanumer varchar(32)
 );
-CREATE TABLE Tegund(
+CREATE TABLE tegund(
 	ID int auto_increment PRIMARY KEY,
 	tegund varchar(20),
 	nott int(10),
 	fjoldi tinyint
 );
-CREATE TABLE Herbergi(
+CREATE TABLE herbergi(
 	ID int auto_increment PRIMARY KEY,
-	tegundID int references Tegund(ID),
-	hotelID int references Hotel(ID),
-	laust binary
+	tegundID int references tegund(ID),
+	hotelID int references hotel(ID),
 );
-CREATE TABLE Bokanir(
+CREATE TABLE bokanir(
 	ID int auto_increment PRIMARY KEY,
 	notandiID int references Notendur(ID),
 	hotelID int references Hotel(ID),
