@@ -1,4 +1,4 @@
-﻿/*----- 1 -----*/
+/*----- 1 -----*/
 SELECT * FROM hotel
 
 /*----- 2 ------*/
@@ -36,10 +36,23 @@ INNER JOIN herbergi ON hotel.ID = herbergi.hotelID
 INNER JOIN tegund ON herbergi.tegundID = tegund.ID
 WHERE hotelID = 5
 /*----- 10 -----*/
-select notendur.nafn
-from notendur
-inner join bokanir on bokanir.notandiID = notendur.ID
-where hallo = now();
+SELECT * FROM notendur
+WHERE notendur.ID =
+(SELECT notandiID FROM bokanir
+WHERE hallo <= CURRENT_DATE AND bless >= CURRENT_DATE AND
+hotelID = 5);
+/*----- 11 -----*/
+
+/*----- 12 -----*/
+SELECT DISTINCT herbergiID
+FROM bokanir
+WHERE herbergiID NOT IN
+(SELECT herbergiID
+FROM bokanir
+WHERE hallo <= CURRENT_DATE AND bless >= CURRENT_DATE)
+AND hotelID = 7;
+/*----- 13 -----*/
+
 /*----- 14 -----*/
 SELECT hotelID, count(ID)
 FROM herbergi
@@ -48,5 +61,4 @@ GROUP BY hotelID
 SELECT hotelID, count(ID)
 FROM herbergi
 GROUP BY hotelID
-/*----- 16 -----*/
 
