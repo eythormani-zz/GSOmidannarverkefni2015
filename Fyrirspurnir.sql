@@ -42,7 +42,10 @@ WHERE notendur.ID =
 WHERE hallo <= CURRENT_DATE AND bless >= CURRENT_DATE AND
 hotelID = 5);
 /*----- 11 -----*/
-
+SELECT SUM(tegund.nott)
+FROM herbergi
+JOIN bokanir ON (herbergiID = herbergi.ID)
+WHERE pantanir.hotelID = 2;
 /*----- 12 -----*/
 SELECT DISTINCT herbergiID
 FROM bokanir
@@ -52,7 +55,12 @@ FROM bokanir
 WHERE hallo <= CURRENT_DATE AND bless >= CURRENT_DATE)
 AND hotelID = 7;
 /*----- 13 -----*/
-
+select SUM(tegund.nott) from herbergi 
+inner join tegund on tegund.id = herbergi.tegundID
+where ID not in 
+(select herbergiID from bokanir 
+where hallo <= CURRENT_DATE AND bless >= CURRENT_DATE)
+AND Hotel_ID = 7;
 /*----- 14 -----*/
 SELECT hotelID, count(ID)
 FROM herbergi
